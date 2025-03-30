@@ -4,6 +4,7 @@ import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import Contact from "./pages/Contact.tsx";
 import Menu from "./pages/Menu.tsx";
+import OverUs from "./pages/OverUs.tsx";
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
             <Routes>
                 <Route path={import.meta.env.BASE_URL} element={<Home />} />
                 <Route path={`${import.meta.env.BASE_URL}menu`} element={<Menu />} />
+                <Route path={`${import.meta.env.BASE_URL}over-us`} element={<OverUs />} />
                 <Route path={`${import.meta.env.BASE_URL}contact`} element={<Contact />} />
             </Routes>
         </Container>

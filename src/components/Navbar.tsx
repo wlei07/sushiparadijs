@@ -21,9 +21,10 @@ export default function Navbar() {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
     const navLinks = [
-        {label: "Home", to: import.meta.env.BASE_URL},
-        {label: "Menu", to: `${import.meta.env.BASE_URL}menu`},
-        {label: "Contact", to: `${import.meta.env.BASE_URL}contact`}
+        {label: "HOME", to: import.meta.env.BASE_URL},
+        {label: "MENU", to: `${import.meta.env.BASE_URL}menu`},
+        {label: "OVER ONS", to: `${import.meta.env.BASE_URL}over-us`},
+        {label: "CONTACT", to: `${import.meta.env.BASE_URL}contact`}
     ];
 
     return (
