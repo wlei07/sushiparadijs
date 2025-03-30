@@ -11,11 +11,11 @@ export default function App() {
       <>
         <Navbar/>
         <Container sx={{mt: 4}}>
-          <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/menu" element={<Menu/>}/>
-            <Route path="/contact" element={<Contact/>}/>
-          </Routes>
+            <Routes>
+                <Route path={import.meta.env.BASE_URL} element={<Home />} />
+                <Route path={`${import.meta.env.BASE_URL}menu`} element={<Menu />} />
+                <Route path={`${import.meta.env.BASE_URL}contact`} element={<Contact />} />
+            </Routes>
         </Container>
       </>
   );

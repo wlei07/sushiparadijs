@@ -10,7 +10,7 @@ export default function Home() {
             <Typography variant="h6" color="text.secondary" gutterBottom>
                 Enjoy the finest sushi experience with fresh ingredients and authentic flavors.
             </Typography>
-            <Button variant="contained" color="secondary" component={Link} to="/menu">
+            <Button variant="contained" color="secondary" component={Link} to={`${import.meta.env.BASE_URL}menu`}>
                 View Menu
             </Button>
             <Box display="flex" justifyContent="center" gap={2} mt={4}>
