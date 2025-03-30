@@ -4,6 +4,7 @@ import {
     Button,
     Drawer,
     IconButton,
+    List,
     ListItemButton,
     ListItemText,
     Toolbar,
@@ -13,7 +14,7 @@ import {
 import {Link} from "react-router-dom";
 import logo from '../assets/logo.png';
 import {useState} from "react";
-import {List, Menu} from "@mui/icons-material";
+import {Menu} from "@mui/icons-material";
 
 export default function Navbar() {
     const [drawerOpen, setDrawerOpen] = useState(false);
@@ -28,7 +29,14 @@ export default function Navbar() {
     return (
         <AppBar position="sticky" color="primary">
             <Toolbar>
-                <Box component="img" src={logo} sx={{height: 60, marginRight: 2}}/>
+                <Link to={import.meta.env.BASE_URL}>
+                    <Box
+                        component="img"
+                        src={logo}
+                        alt="Logo"
+                        sx={{ height: 60, marginRight: 2, cursor: "pointer" }}
+                    />
+                </Link>
                 <Box sx={{ flexGrow: 1 }} />
                 {isMobile ? (
                     <>
